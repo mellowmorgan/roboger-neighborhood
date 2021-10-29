@@ -15,14 +15,14 @@ function intFinder(word){
         has3=true;
       }
     }
-    if(has1){
-      word="Beep!";
-    }
+    if(has3){
+      word="Won't you be my neighbor?";}
     else if(has2){
       word="Boop!";
     }
-    else if(has3){
-      word="Won't you be my neighbor?";}
+    else if(has1){
+      word="Beep!";
+    }
     else{
       word=parseInt(word);
     }

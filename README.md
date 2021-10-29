@@ -26,6 +26,11 @@ Test: "It should return "Beep!" for input 10."
 Code: intFinder(10);
 Expected Output: "Beep!"
 
+Test: "It should return "Boop!" for input 21."
+Code: intFinder(21);
+Expected Output: "Beep!"
+
+
 
 # Mr. Roboger's Neighborhood
 
