@@ -67,9 +67,32 @@ function displayResults(input){
 
 
 $(document).ready(function(){
-  $("form#user").submit(function(event){
+  $('#form-2-link').on('click', function(event) {
+    $("#form-1").hide();
+    $("#form-2").show();
+    $("#form-2-link").addClass("active");
+    $("#form-1-link").removeClass("active");
+    
+  });
+  $('#form-1-link').on('click', function(event) {
+    $("#form-2").hide();
+    $("#form-1").show();
+    $("#form-1-link").addClass("active");
+    $("#form-2-link").removeClass("active");
+    
+  });
+
+  $("form#no-name-form").submit(function(event){
     event.preventDefault();
     const input = parseInt($("#input").val());
+    deleteLast(lengthLast);
+    displayResults(input);
+    
+  });
+  $("form#name-form").submit(function(event){
+    event.preventDefault();
+    const input = parseInt($("#input-2").val());
+    const name = $("#name").val();
     deleteLast(lengthLast);
     displayResults(input);
     

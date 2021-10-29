@@ -19,9 +19,18 @@
         
     </div>
   </div>
+  <div class="row mid-row-selector">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" id="form-1-link" aria-current="page" href="#">Form 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="form-2-link" href="#">Form 2</a>
+      </li>
+  </div>
    <div class="row bottom-row">
-     <div class="col">
-    <form id="user">
+     <div class="col" id="form-1">
+    <form id="no-name-form">
       <div class="form-group">
         <label for=input>
           <h4>Enter an integer:</h4></label>
@@ -29,9 +38,30 @@
         <button type="submit" class="form-control btn btn-lg btn-dark">Submit</button>
       </div>
     </form>
+    
+
+  </div>
+  <div class="col" id="form-2">
+    <form id="name-form">
+      <div class="form-group">
+        <label for=input-2>
+          <h4>Enter an integer:</h4></label>
+        <input id="input-2" type=number name="input-2" class="form-control"></input>
+        <label for=name>
+          <h4>Enter your name:</h4></label>
+        <input id="name" type=text name="name" class="form-control"></input>
+        <button type="submit" class="form-control btn btn-lg btn-dark">Submit</button>
+        
+      </div>
+    </form>
+    </div>
+    </div>
+    <div class="row result-row">
+      <div class="col">
     <h4>Result:</h4> 
     <div id="output"></div> 
-
+  </div>
+  </div>
   </div>
   </div>
   </div>

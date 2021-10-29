@@ -41,11 +41,16 @@ body{
   font-size: 1.25rem;
   color: rgb(255, 201, 25);
 }
+.mid-row-selector{
+  margin-bottom:1rem;
+}
+
+
 .bottom-row{
   margin-left:2rem;
   margin-right:2rem;
   margin-top:3rem;
-  margin-bottom:3rem;
+  margin-bottom:.5rem;
   text-align:center;
   font-weight:bold;
 }
@@ -72,6 +77,31 @@ button{
 }
 form{
   margin-bottom:2.5rem;
+}
+a{
+  font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+  color: red;
+}
+a:hover{
+  color:rgb(177, 0, 0);
+}
+}
+
+#form-1{
+  display: block;
+}
+
+#form-2{
+  display: none;
+}
+ul{
+  width:100%;
+}
+
+.result-row{
+  text-align: center;
 }
 #output{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
