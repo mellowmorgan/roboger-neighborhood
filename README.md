@@ -36,7 +36,7 @@ Expected Output: "Boop!"
 
 #### By Morgan Waites
 
-#### Convert integers to range of each numbers from 0 to user inputted number.
+#### Webpage converts integers to array from 0 to user inputted number then displays it with certain numbers changed depending on whether conditions met.
 
 ## Technologies Used
 
@@ -46,14 +46,13 @@ Expected Output: "Boop!"
 
 ## Description
 
-Webpage converts integers to array from 0 to user inputted number then display it with certain numbers changed depending on whether conditions met.
+Webpage converts integers to range of results with index from 0 to inputted integer, with different values for each number. Two forms available, one will add name to some of the results.
 
 ## Setup/Installation Requirements
 
-* Create and/or navigate to the directory you would like to contain this project on your computer.
-* git clone address in terminal
-* cd into folder created
-* Open the file "index.html"   
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html.
 
 ## Known Bugs
 

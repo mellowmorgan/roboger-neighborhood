@@ -7,7 +7,7 @@ body{
 }
 
 .top-row{
-  height:20rem;
+  height:18rem;
 }
 .background{
   background-image: url(../img/set.jpeg);
@@ -32,7 +32,7 @@ body{
   font-weight: bolder;
   font-size: 2.2rem;
   color: rgb(255, 201, 25);
-  margin-bottom:2rem;
+  margin-bottom:1rem;
 
 }
 .heading p{
@@ -47,6 +47,7 @@ body{
 
 
 .bottom-row{
+  min-height:16rem;
   margin-left:2rem;
   margin-right:2rem;
   margin-top:3rem;
@@ -75,6 +76,7 @@ button{
 .bottom-row h2,h3,h4{
   margin-bottom:1rem;
   font-weight: bold;
+
 }
 form{
   margin-bottom:2.5rem;

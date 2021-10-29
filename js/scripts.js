@@ -88,12 +88,18 @@ $(document).ready(function(){
     event.preventDefault();
     const input = parseInt($("#input").val());
     displayResults(input);
-    
+    $('html, body').animate({
+      scrollTop: $(".result-row").offset().top
+  }, 600);
   });
+
   $("form#name-form").submit(function(event){
     event.preventDefault();
     const input = parseInt($("#input-2").val());
     const name = $("#name").val();
     displayResults(input, name);  
+    $('html, body').animate({
+      scrollTop: $(".result-row").offset().top
+  }, 600);
   });
 });
