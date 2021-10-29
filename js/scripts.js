@@ -53,6 +53,5 @@ $(document).ready(function(){
     event.preventDefault();
     const input = parseInt($("#input").val());
     $("#output").html(beepBoop(input).join(", "));
-
   });
 });
