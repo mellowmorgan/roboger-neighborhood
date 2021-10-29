@@ -9,14 +9,17 @@ Code: beepBoop(5);
 Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5}
 
 Test: "It should return an array with 0 through 11 with all numbers containing a 1 replaced with "Beep!" as well now."
-Code: beepBoop(13);
+Code: beepBoop(11);
 Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"}
 
+Test: "It should return an array with 0 through 13 with digits containing 3 having precedence, 2 having precendence over 1, 1 having precedence over rest."
+Code: beepBoop(13);
+Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"}
 
 Describe: intFinder(number)
 
 Test: "It should return "Beep!" for input of 1."
-Code: inFinder(1;
+Code: inFinder(1);
 Expected Output: "Beep!"
 
 Test: "It should return "Boop!" for input of 2."
@@ -31,6 +34,9 @@ Test: "It should return "Boop!" for input 21."
 Code: intFinder(21);
 Expected Output: "Boop!"
 
+Test: "It should return "Won't you be my neighbor!" for input 32."
+Code: intFinder(32);
+Expected Output: "Won't you be my neighbor?"
 
 # Mr. Roboger's Neighborhood
 
