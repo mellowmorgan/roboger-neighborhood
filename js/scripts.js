@@ -1,14 +1,22 @@
-
-
 function beepBoop(number){
   let numberArray = [];
   for (let i=0;i<number+1;i++){
     numberArray.push(i);
   }
   const newArray = numberArray.map(function(element){
-    if(element===1){element="Beep!";}
-    else if(element===2){element="Boop!";}
-    else if(element===3){element="Won't you be my neighbor?";}
+    element=element.toString();
+    let has1=false;
+    let has2=false;
+    let has3=false;
+    for (const character of element){
+      if (character==="1"){
+        has1=true;
+      }
+    }
+    if(has1){element="Beep!";}
+    else if(has2){element="Boop!";}
+    else if(has3){element="Won't you be my neighbor?";}
+  
     return element
   });
 
