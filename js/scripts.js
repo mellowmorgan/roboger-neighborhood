@@ -39,7 +39,16 @@ function beepBoop(number){
   const newArray = numberArray.map(function(element){
     return intFinder(element);
   });
+  return newArray;
+}
 
+function addNameToResults(array, name){
+  const newArray = array.map(function(element){
+    if (element==="Won't you be my neighbor?"){
+      element="Won't you be my neighbor, " + name +"?"
+    }
+    return element;
+  });
   return newArray;
 
 }
@@ -55,8 +64,9 @@ function deleteLast(length){
   }
 }
 
-function displayResults(input){  
-  const arr = beepBoop(input);
+function displayResults(input, name){  
+  let arr = beepBoop(input);
+  if(name){arr = addNameToResults(arr,name);}
   arr.forEach(function(element){
     $("#output").append("<p>"+element+"</p>");
     //next add delay fade in?
@@ -64,21 +74,23 @@ function displayResults(input){
   lengthLast = arr.length;
 }
 
-
-
 $(document).ready(function(){
   $('#form-2-link').on('click', function(event) {
     $("#form-1").hide();
     $("#form-2").show();
     $("#form-2-link").addClass("active");
     $("#form-1-link").removeClass("active");
-    
+    deleteLast(lengthLast);
+    $("#input").val("");
   });
   $('#form-1-link').on('click', function(event) {
     $("#form-2").hide();
     $("#form-1").show();
     $("#form-1-link").addClass("active");
     $("#form-2-link").removeClass("active");
+    deleteLast(lengthLast);
+    $("#input-2").val("");
+    $("#name").val("");
     
   });
 
@@ -94,7 +106,6 @@ $(document).ready(function(){
     const input = parseInt($("#input-2").val());
     const name = $("#name").val();
     deleteLast(lengthLast);
-    displayResults(input);
-    
+    displayResults(input, name);  
   });
 });
