@@ -55,6 +55,7 @@ body{
   font-weight:bold;
 }
 input{
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -101,10 +102,21 @@ ul{
 }
 
 .result-row{
+  min-height:18rem;
   text-align: center;
-  margin-bottom:3rem;
+  padding-bottom:3rem;
+  padding-top:3rem;
+  padding-left:2rem;
+  padding-right:2rem;
+  background-color:#343a40;
+}
+.result-row h4{
+  color:rgb(255, 201, 25);
+  margin-bottom:2rem;
 }
 #output{
   font-family:'Courier New', Courier, monospace;
-  color:rgb(95, 95, 95); 
+  font-weight: bold;
+  font-size:1.2rem;
+  color:white;
 }
