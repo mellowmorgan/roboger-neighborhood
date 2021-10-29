@@ -1,5 +1,8 @@
+//Business logic
+
+
 function intFinder(word){
-  //returns winning statement based on precedence
+  //returns winning statement or number based on precedence
   word=word.toString();
     let has1=false;
     let has2=false;
@@ -42,10 +45,14 @@ function beepBoop(number){
 
 }
 
+
+
+
 $(document).ready(function(){
   $("form#user").submit(function(event){
     event.preventDefault();
     const input = parseInt($("#input").val());
-    $("#output").html(beepBoop(input));
+    $("#output").html(beepBoop(input).join(", "));
+
   });
 });
