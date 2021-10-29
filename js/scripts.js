@@ -35,8 +35,7 @@ function beepBoop(number){
     numberArray.push(i);
   }
   const newArray = numberArray.map(function(element){
-    
-    return element
+    return intFinder(element);
   });
 
   return newArray;
