@@ -2,9 +2,11 @@ Describe: beepBoop()
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(0);
-Expected Output: 0
+Expected Output: {0}
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
+Test: "It should return an array with 0 through 5 if input 5 and change 1,2,3 with "Beep!", Boop!", "Won't you be my neighbor?"
+Code: beepBoop(5)
+Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5}
 
 # Mr. Roboger's Neighborhood
 
