@@ -12,6 +12,12 @@ function beepBoop(number){
       if (character==="1"){
         has1=true;
       }
+      else if (character==="2"){
+        has2=true;
+      }
+      else if (character==="3"){
+        has3=true;
+      }
     }
     if(has1){element="Beep!";}
     else if(has2){element="Boop!";}
