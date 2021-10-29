@@ -1,6 +1,7 @@
 body{
   font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .col{
   padding-left:0;
   padding-right:0;
@@ -9,14 +10,15 @@ body{
 .top-row{
   height:18rem;
 }
+
 .background{
   background-image: url(../img/set.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-
 }
+
 .heading{
   position: absolute;
   top: 50%;
@@ -27,24 +29,25 @@ body{
   padding: 20px;
   text-align: center;
 }
+
 .heading h2{
   text-shadow: rgb(0, 0, 0) 1px 2px 2px; 
   font-weight: bolder;
   font-size: 2.2rem;
   color: rgb(255, 201, 25);
   margin-bottom:1rem;
-
 }
+
 .heading p{
   text-shadow: rgb(0, 0, 0) 1px 2px 2px;
   font-weight: bolder;
   font-size: 1.25rem;
   color: rgb(255, 201, 25);
 }
+
 .mid-row-selector{
   margin-bottom:1rem;
 }
-
 
 .bottom-row{
   min-height:16rem;
@@ -56,7 +59,6 @@ body{
   font-weight:bold;
 }
 input{
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -64,9 +66,11 @@ input{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
 label{
   margin-bottom: 0rem;
 }
+
 button{
   width: 20rem;
   margin-left: auto;
@@ -76,20 +80,22 @@ button{
 .bottom-row h2,h3,h4{
   margin-bottom:1rem;
   font-weight: bold;
-
 }
+
 form{
   margin-bottom:2.5rem;
 }
+
 a{
   font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 a{
   color: red;
 }
+
 a:hover{
   color:rgb(177, 0, 0);
-}
 }
 
 #form-1{
@@ -99,6 +105,7 @@ a:hover{
 #form-2{
   display: none;
 }
+
 ul{
   width:100%;
 }
@@ -112,10 +119,12 @@ ul{
   padding-right:2rem;
   background-color:#343a40;
 }
+
 .result-row h4{
   color:rgb(255, 201, 25);
   margin-bottom:2rem;
 }
+
 #output{
   font-family:'Courier New', Courier, monospace;
   font-weight: bold;

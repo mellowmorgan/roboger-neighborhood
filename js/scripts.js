@@ -1,4 +1,4 @@
-//Business logic
+//Business Logic
 
 function intFinder(word){
   //returns winning statement or number based on precedence
@@ -26,7 +26,7 @@ function intFinder(word){
       word="Beep!";
     }
     else{
-      word=parseInt(word);
+      word=parseInt(word); //change number back
     }
   return word;
 }
@@ -53,15 +53,12 @@ function addNameToResults(array, name){
 
 }
 
-
 //UI Logic
-
 
 function displayResults(input, name){  
   let arr = beepBoop(input);
   if(name){arr = addNameToResults(arr,name);}
   $("#output").text(arr.join(", "));
-    //next add delay fade in?
 }
 
 $(document).ready(function(){
@@ -81,7 +78,6 @@ $(document).ready(function(){
     $("#input-2").val("");
     $("#name").val("");
     $("#output").empty();
-    
   });
 
   $("form#no-name-form").submit(function(event){
