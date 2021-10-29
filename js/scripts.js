@@ -1,6 +1,5 @@
 //Business logic
 
-
 function intFinder(word){
   //returns winning statement or number based on precedence
   word=word.toString();
@@ -46,12 +45,32 @@ function beepBoop(number){
 }
 
 
+//UI Logic
+
+let lengthLast=0;
+
+function deleteLast(length){
+  for(const i=0;i<length;i++){
+    $("#output").
+  }
+}
+
+function displayResults(input){
+  const arr = beepBoop(input);
+  arr.forEach(function(element){
+    $("#output").append("<p>"+element+"</p>");
+  });
+  lengthLast = arr.length;
+}
+
 
 
 $(document).ready(function(){
   $("form#user").submit(function(event){
     event.preventDefault();
     const input = parseInt($("#input").val());
-    $("#output").html(beepBoop(input).join(", "));
+    deleteLast(lengthLast);
+    displayResults(input);
+    
   });
 });
