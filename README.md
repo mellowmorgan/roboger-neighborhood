@@ -12,6 +12,11 @@ Test: "It should return an array with 0 through 11 with all numbers containing a
 Code: beepBoop(13);
 Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"};
 
+Describe: intFinder(number)
+
+Test: "It should return 
+Code: findPrecedence(number);
+Expected Output: 
 
 # Mr. Roboger's Neighborhood
 
