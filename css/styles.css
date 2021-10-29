@@ -59,7 +59,7 @@ input{
   margin-right: auto;
   margin-bottom: 1rem;
   max-width:20rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
 label{
@@ -105,6 +105,6 @@ ul{
   margin-bottom:3rem;
 }
 #output{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Courier New', Courier, monospace;
   color:rgb(95, 95, 95); 
 }

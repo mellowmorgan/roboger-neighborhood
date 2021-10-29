@@ -56,22 +56,12 @@ function addNameToResults(array, name){
 
 //UI Logic
 
-let lengthLast=0;
-
-function deleteLast(length){
-  for(let i=0;i<length;i++){
-    $("#output p:last-child").remove();
-  }
-}
 
 function displayResults(input, name){  
   let arr = beepBoop(input);
   if(name){arr = addNameToResults(arr,name);}
-  arr.forEach(function(element){
-    $("#output").append("<p>"+element+"</p>");
+  $("#output").text(arr.join(", "));
     //next add delay fade in?
-  });
-  lengthLast = arr.length;
 }
 
 $(document).ready(function(){
@@ -80,24 +70,23 @@ $(document).ready(function(){
     $("#form-2").show();
     $("#form-2-link").addClass("active");
     $("#form-1-link").removeClass("active");
-    deleteLast(lengthLast);
     $("#input").val("");
+    $("#output").empty();
   });
   $('#form-1-link').on('click', function(event) {
     $("#form-2").hide();
     $("#form-1").show();
     $("#form-1-link").addClass("active");
     $("#form-2-link").removeClass("active");
-    deleteLast(lengthLast);
     $("#input-2").val("");
     $("#name").val("");
+    $("#output").empty();
     
   });
 
   $("form#no-name-form").submit(function(event){
     event.preventDefault();
     const input = parseInt($("#input").val());
-    deleteLast(lengthLast);
     displayResults(input);
     
   });
@@ -105,7 +94,6 @@ $(document).ready(function(){
     event.preventDefault();
     const input = parseInt($("#input-2").val());
     const name = $("#name").val();
-    deleteLast(lengthLast);
     displayResults(input, name);  
   });
 });
