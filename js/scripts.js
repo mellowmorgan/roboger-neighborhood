@@ -50,15 +50,16 @@ function beepBoop(number){
 let lengthLast=0;
 
 function deleteLast(length){
-  for(const i=0;i<length;i++){
-    $("#output").
+  for(let i=0;i<length;i++){
+    $("#output p:last-child").remove();
   }
 }
 
-function displayResults(input){
+function displayResults(input){  
   const arr = beepBoop(input);
   arr.forEach(function(element){
     $("#output").append("<p>"+element+"</p>");
+    //next add delay fade in?
   });
   lengthLast = arr.length;
 }
