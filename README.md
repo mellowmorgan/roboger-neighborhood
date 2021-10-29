@@ -14,9 +14,18 @@ Expected Output: {0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 
 Describe: intFinder(number)
 
-Test: "It should return 
-Code: findPrecedence(number);
-Expected Output: 
+Test: "It should return "Beep!" for input of 1."
+Code: inFinder(1;
+Expected Output: "Beep!"
+
+Test: "It should return "Boop!" for input of 2."
+Code: intFinder(2);
+Expected Output: "Boop!"
+
+Test: "It should return "Beep!" for input 10."
+Code: intFinder(10);
+Expected Output: "Beep!"
+
 
 # Mr. Roboger's Neighborhood
 

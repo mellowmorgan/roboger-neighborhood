@@ -1,4 +1,4 @@
-function finder(word){
+function intFinder(word){
   //returns winning statement based on precedence
   word=word.toString();
     let has1=false;
@@ -19,10 +19,10 @@ function finder(word){
       word="Beep!";
     }
     else if(has2){
-      element="Boop!";
-      }
+      word="Boop!";
+    }
     else if(has3){
-      element="Won't you be my neighbor?";}
+      word="Won't you be my neighbor?";}
     else{
       word=parseInt(word);
     }
