@@ -18,7 +18,6 @@ Test: "It should return an array with 0 through 13 with digits containing 3 havi
 Code: beepBoop(13);<br>
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"]<br>
 
-
 Describe: intFinder(number)
 
 Test: "It should return "Beep!" for input of 1."<br>
@@ -40,7 +39,13 @@ Expected Output: "Boop!"<br>
 Test: "It should return "Won't you be my neighbor!" for input 32."<br>
 Code: intFinder(32);<br>
 Expected Output: "Won't you be my neighbor?"<br>
-<br>
+
+Describe: addNameToResults(array, name)<br>
+
+Test: "It should return array with elements "Won't you be my neighbor!" changed to  "Won't you be my neighbor, " + name + "?" and name given is "Morgan."" <br>
+Code: addNameToResults(array, name) <br>
+Expected Output: array with element "Won't you be my neighbor!" changed to  "Won't you be my neighbor, Morgan?"<br>
+
 
 # Mr. Roboger's Neighborhood
 
