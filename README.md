@@ -2,63 +2,45 @@
 
 Describe: beepBoop()
 
-Test: "It should return an array with a 0 if the number 0 is inputted"
+Test: "It should return an array with a 0 if the number 0 is inputted"<br>
+Code: beepBoop(0);<br>
+Expected Output: [0]<br>
 
-Code: beepBoop(0);
+Test: "It should return an array with 0 through 5 if input 5 and change 1, 2, 3 with "Beep!", Boop!", "Won't you be my neighbor?"<br>
+Code: beepBoop(5);<br>
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]<br>
 
-Expected Output: [0]
+Test: "It should return an array with 0 through 11 with all numbers containing a 1 replaced with "Beep!" as well now."<br>
+Code: beepBoop(11);<br>
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]<br>
 
-Test: "It should return an array with 0 through 5 if input 5 and change 1, 2, 3 with "Beep!", Boop!", "Won't you be my neighbor?"
-
-Code: beepBoop(5);
-
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
-
-Test: "It should return an array with 0 through 11 with all numbers containing a 1 replaced with "Beep!" as well now."
-
-Code: beepBoop(11);
-
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
-
-Test: "It should return an array with 0 through 13 with digits containing 3 having precedence, 2 having precendence over 1, 1 having precedence over rest."
-
-Code: beepBoop(13);
-
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"]
+Test: "It should return an array with 0 through 13 with digits containing 3 having precedence, 2 having precendence over 1, 1 having precedence over rest."<br>
+Code: beepBoop(13);<br>
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop", "Won't you be my neighbor?"]<br>
 
 
 Describe: intFinder(number)
 
-Test: "It should return "Beep!" for input of 1."
+Test: "It should return "Beep!" for input of 1."<br>
+Code: inFinder(1);<br>
+Expected Output: "Beep!"<br>
 
-Code: inFinder(1);
+Test: "It should return "Boop!" for input of 2."<br>
+Code: intFinder(2);<br>
+Expected Output: "Boop!"<br>
 
-Expected Output: "Beep!"
+Test: "It should return "Beep!" for input 10."<br>
+Code: intFinder(10);<br>
+Expected Output: "Beep!"<br>
 
-Test: "It should return "Boop!" for input of 2."
+Test: "It should return "Boop!" for input 21."<br>
+Code: intFinder(21);<br>
+Expected Output: "Boop!"<br>
 
-Code: intFinder(2);
-
-Expected Output: "Boop!"
-
-Test: "It should return "Beep!" for input 10."
-
-Code: intFinder(10);
-
-Expected Output: "Beep!"
-
-Test: "It should return "Boop!" for input 21."
-
-Code: intFinder(21);
-
-Expected Output: "Boop!"
-
-Test: "It should return "Won't you be my neighbor!" for input 32."
-
-Code: intFinder(32);
-
-Expected Output: "Won't you be my neighbor?"
-
+Test: "It should return "Won't you be my neighbor!" for input 32."<br>
+Code: intFinder(32);<br>
+Expected Output: "Won't you be my neighbor?"<br>
+<br>
 
 # Mr. Roboger's Neighborhood
 
@@ -85,6 +67,10 @@ Webpage converts integers to range of results with index from 0 to inputted inte
 ## Known Bugs
 
 * No known bugs.
+
+## Github Page
+
+https://mellowmorgan.github.io/roboger-neighborhood/
 
 ## License
 
