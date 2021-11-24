@@ -1,3 +1,39 @@
+# Mr. Roboger's Neighborhood
+
+#### By Morgan Waites
+
+#### Webpage converts integers to array from 0 to user inputted number then displays it with certain numbers changed depending on whether conditions met.
+
+## Technologies Used
+
+* HTML
+* CSS
+* Javascript/JQuery
+
+## Description
+
+Webpage converts integers to range of results with index from 0 to inputted integer, with different values for each number. Two forms available, one will add name to some of the results.
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html.
+
+## Known Bugs
+
+* No known bugs.
+
+## Github Page
+
+https://mellowmorgan.github.io/roboger-neighborhood/
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2021 Morgan Waites
+
 ## Tests
 
 Describe: beepBoop()
@@ -46,39 +82,3 @@ Test: "It should return array with elements "Won't you be my neighbor!" changed 
 Code: addNameToResults(array, name) <br>
 Expected Output: array with element "Won't you be my neighbor!" changed to  "Won't you be my neighbor, Morgan?"<br>
 
-
-# Mr. Roboger's Neighborhood
-
-#### By Morgan Waites
-
-#### Webpage converts integers to array from 0 to user inputted number then displays it with certain numbers changed depending on whether conditions met.
-
-## Technologies Used
-
-* HTML
-* CSS
-* Javascript/JQuery
-
-## Description
-
-Webpage converts integers to range of results with index from 0 to inputted integer, with different values for each number. Two forms available, one will add name to some of the results.
-
-## Setup/Installation Requirements
-
-* Clone this repository to your desktop.
-* Navigate to the top level of the directory.
-* Open index.html.
-
-## Known Bugs
-
-* No known bugs.
-
-## Github Page
-
-https://mellowmorgan.github.io/roboger-neighborhood/
-
-## License
-
-[MIT](https://opensource.org/licenses/MIT)
-
-Copyright (c) 2021 Morgan Waites
